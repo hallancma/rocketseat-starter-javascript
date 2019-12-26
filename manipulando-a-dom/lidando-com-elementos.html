@@ -14,10 +14,13 @@
       var linkElement = document.createElement('a');
       linkElement.setAttribute('href', 'http://rocketseat.com.br');
       linkElement.setAttribute('title', 'Site da Rocketseat');
+
       var textElement = document.createTextNode('Acessar site da Rockeseat');
       linkElement.appendChild(textElement);
+
       var contentElement = document.querySelector('#app');
       contentElement.appendChild(linkElement);
+
       var inputElement = document.querySelector('#nome');
       contentElement.removeChild(inputElement);
     </script>
