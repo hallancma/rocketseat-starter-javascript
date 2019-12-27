@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button>Criar Quadradro</button>
+      <div id="boxContainer"></div>
+      <input type="text" name="nome">
+      <button onClick="adicionar()">Adicionar</button>
+    </div>
+    <script>
+
+      const btnElement = document.querySelector('button');
+      const boxContainer = document.querySelector('#boxContainer');
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      btnElement.onclick = function createBox() {
+        const boxElement = document.createElement('div');
+        boxElement.setAttribute('class', 'box');
+        boxElement.style.width = '100px';
+        boxElement.style.height = '100px';
+        boxElement.style.margin = '5px';
+        boxElement.style.backgroundColor = '#f00';
+
+        boxElement.onmouseover = function () {
+          boxElement.style.backgroundColor = getRandomColor();
+        }
+
+        boxContainer.appendChild(boxElement);
+
+      }
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      const ulElement = document.createElement('ul');
+      const appContainer = document.querySelector('#app');
+      for (nome of nomes) {
+        let liElement = document.createElement('li');
+        let textNode = document.createTextNode(nome);
+        liElement.appendChild(textNode);
+        ulElement.appendChild(liElement);
+        appContainer.appendChild(ulElement);
+      }
+      function adicionar() {
+        const name = document.querySelector('input[name="nome"');
+        liElement = document.createElement('li');
+        textNode = document.createTextNode(name.value);
+        liElement.appendChild(textNode);
+        ulElement.appendChild(liElement);
+        appContainer.appendChild(ulElement);
+        name.value = '';
+
+      }
+    </script>
+  </body>
+</html>
