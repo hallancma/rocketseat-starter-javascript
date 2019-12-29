@@ -2,7 +2,7 @@
 
 > Exemplos contidos no curso da Rocketseat Starter - Curso JavaScript:
 
-## :rocket: Módulo Introdução JavaScript [:link:](https://blog.da2k.com.br)
+## :rocket: [Módulo Introdução JavaScript](https://blog.da2k.com.br)
 
 - [x] Introdução
 - [x] Configurando Ambiente
