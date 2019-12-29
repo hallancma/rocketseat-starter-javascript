@@ -1,15 +1,15 @@
-# rocketseat-starter-javascript
+# Rocketseat Starter - Curso JavaScript
 
-Exemplos contidos no curso da Rocketseat - Starter- Javascript:
+> Exemplos contidos no curso da Rocketseat Starter - Curso JavaScript:
 
-## Módulo Introdução JavaScript
+## :rocket: Módulo Introdução JavaScript
 
-- Introdução
-- Configurando Ambiente
-- Variáveis e dados
+- [x] Introdução
+- [x] Configurando Ambiente
+- [x] Variáveis e dados
 
-## Manipulando a DOM
+## :rocket: Manipulando a DOM
 
-- Eventos inline
-- Trabalhando com a DOM
-- Lindando com Elementos
+- [x] Eventos inline
+- [x] Trabalhando com a DOM
+- [x] Lindando com Elementos
